@@ -15,6 +15,9 @@ public class ApplicationLauncher {
     public static LwjglApplication app;
     
     public static void main(String[] args) throws ParseException {
+        System.out.println("Hello, git!");
+        System.out.println("Hello, git!");
+        
         SettingApp.load();
         LwjglApplicationConfiguration cnf = new LwjglApplicationConfiguration();
         cnf.width = WIDTH_WIN;
