@@ -1,0 +1,45 @@
+
+uiskin.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+button-down
+  rotate: false
+  xy: 1, 1
+  size: 20, 40
+  split: 9, 10, 19, 18
+  orig: 20, 40
+  offset: 0, 0
+  index: -1
+button-over
+  rotate: false
+  xy: 23, 1
+  size: 20, 40
+  split: 9, 9, 14, 18
+  orig: 20, 40
+  offset: 0, 0
+  index: -1
+button
+  rotate: false
+  xy: 45, 1
+  size: 20, 40
+  split: 10, 9, 17, 17
+  orig: 20, 40
+  offset: 0, 0
+  index: -1
+progressbar
+  rotate: false
+  xy: 67, 11
+  size: 20, 30
+  split: 8, 10, 11, 16
+  orig: 20, 30
+  offset: 0, 0
+  index: -1
+progressbar-filled
+  rotate: false
+  xy: 89, 15
+  size: 20, 26
+  split: 9, 9, 10, 14
+  orig: 20, 26
+  offset: 0, 0
+  index: -1

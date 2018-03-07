@@ -1,0 +1,834 @@
+{
+  "materialItem": [
+    {
+      "name": "fuel",
+      "property": {
+        "map": {}
+      }
+    },
+    {
+      "name": "tree",
+      "property": {
+        "map": {}
+      }
+    }
+  ],
+  "materialBlock": [
+    {
+      "name": "foliage",
+      "isPlayerCrach": true,
+      "property": {
+        "map": {}
+      }
+    },
+    {
+      "name": "other",
+      "isPlayerCrach": true,
+      "property": {
+        "map": {}
+      }
+    },
+    {
+      "name": "ore_1",
+      "isPlayerCrach": false,
+      "property": {
+        "map": {}
+      }
+    },
+    {
+      "name": "grass",
+      "isPlayerCrach": true,
+      "property": {
+        "map": {}
+      }
+    },
+    {
+      "name": "plant",
+      "isPlayerCrach": true,
+      "property": {
+        "map": {}
+      }
+    },
+    {
+      "name": "tree",
+      "isPlayerCrach": true,
+      "property": {
+        "map": {}
+      }
+    },
+    {
+      "name": "torch",
+      "isPlayerCrach": true,
+      "property": {
+        "map": {
+          "layerLight": "10"
+        }
+      }
+    },
+    {
+      "name": "dirst",
+      "isPlayerCrach": true,
+      "property": {
+        "map": {}
+      }
+    },
+    {
+      "name": "stone",
+      "isPlayerCrach": false,
+      "property": {
+        "map": {}
+      }
+    }
+  ],
+  "textures": {
+    "size": "32:32",
+    "nameFile": "Items.png",
+    "names": [
+      "dirst",
+      "grass",
+      "stone",
+      "tree_oak",
+      "foliage_oak",
+      "seedling_oak",
+      "crafting_table",
+      "planks_oak",
+      "plant_grass",
+      "iron_ore",
+      "stone_furnace_off",
+      "stone_furnace_on",
+      "wood_chest",
+      "wood_pixkaxe",
+      "wood_axe",
+      "wood_shovel",
+      "stone_pixkaxe",
+      "stone_axe",
+      "stone_shovel",
+      "seed_plant_grass",
+      "iron_ingot",
+      "iron_pixkaxe",
+      "iron_axe",
+      "iron_shovel",
+      "charcoal",
+      "torch1",
+      "torch2",
+      "torch3",
+      "torch4",
+      "torch5"
+    ]
+  },
+  "items": [
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 0,
+      "maxNum": 99,
+      "nameKod": "grass",
+      "nameEN": "Трава",
+      "nameRU": "Grass",
+      "infaRU": "Тут такая вот информация на русском языке, которую не всем понять \u003d)",
+      "infaEN": "",
+      "texture": "grass",
+      "block": {
+        "extends": "#GRASS",
+        "id": 0,
+        "nameKod": "grass",
+        "item": "dirst",
+        "numItem": 1,
+        "density": 0.5,
+        "type": "SOLID",
+        "property": {
+          "map": {
+            "plantGrass": "plant_grass",
+            "dirstBlock": "dirst"
+          }
+        },
+        "materials": "grass"
+      },
+      "recipe": {
+        "tool": "this",
+        "numResult": 1,
+        "components": {
+          "dirst": 2,
+          "seed_plant_grass": 2
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": ""
+    },
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 1,
+      "maxNum": 99,
+      "nameKod": "dirst",
+      "nameEN": "Земля",
+      "nameRU": "Dirst",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "dirst",
+      "block": {
+        "id": 1,
+        "nameKod": "dirst",
+        "item": "dirst",
+        "numItem": 1,
+        "density": 0.45,
+        "type": "SOLID",
+        "property": {
+          "map": {}
+        },
+        "materials": "dirst"
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": ""
+    },
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 2,
+      "maxNum": 32,
+      "nameKod": "stone",
+      "nameEN": "Stone",
+      "nameRU": "Камень",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "stone",
+      "block": {
+        "id": 2,
+        "nameKod": "stone",
+        "item": "stone",
+        "numItem": 1,
+        "density": 1.0,
+        "type": "SOLID",
+        "property": {
+          "map": {}
+        },
+        "materials": "stone"
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": ""
+    },
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 3,
+      "maxNum": 32,
+      "nameKod": "tree_oak",
+      "nameEN": "Oak",
+      "nameRU": "Дуб",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "tree_oak",
+      "block": {
+        "id": 3,
+        "nameKod": "tree_oak",
+        "item": "tree_oak",
+        "numItem": 1,
+        "density": 1.0,
+        "type": "PASSABLE",
+        "property": {
+          "map": {}
+        },
+        "materials": "tree"
+      },
+      "property": {
+        "map": {
+          "numMelt": "3"
+        }
+      },
+      "materials": "fuel:tree"
+    },
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 4,
+      "maxNum": 99,
+      "nameKod": "foliage_oak",
+      "nameEN": "Foliage Oak",
+      "nameRU": "Листва Дуба",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "foliage_oak",
+      "block": {
+        "extends": "#FOLIAGE",
+        "id": 4,
+        "nameKod": "foliage_oak",
+        "item": "seedling_oak",
+        "numItem": 1,
+        "density": 0.1,
+        "type": "SOLID",
+        "property": {
+          "map": {}
+        },
+        "materials": "foliage"
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": "foliage"
+    },
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 5,
+      "maxNum": 99,
+      "nameKod": "seedling_oak",
+      "nameEN": "Seedling Oak",
+      "nameRU": "Саженец Дуба",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "seedling_oak",
+      "block": {
+        "extends": "#SEEDLING",
+        "id": 5,
+        "nameKod": "seedling_oak",
+        "item": "seedling_oak",
+        "numItem": 1,
+        "density": 0.2,
+        "type": "PASSABLE",
+        "property": {
+          "map": {
+            "nameTree": "tree_oak",
+            "nameFoliage": "foliage_oak"
+          }
+        },
+        "materials": "plant"
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": ""
+    },
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 6,
+      "maxNum": 99,
+      "nameKod": "crafting_table",
+      "nameEN": "CraftingTable",
+      "nameRU": "Верстак",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "crafting_table",
+      "block": {
+        "extends": "#CRAFTING_TABLE",
+        "id": 6,
+        "nameKod": "crafting_table",
+        "item": "crafting_table",
+        "numItem": 1,
+        "density": 0.2,
+        "type": "SOLID",
+        "property": {
+          "map": {}
+        },
+        "materials": "tree"
+      },
+      "recipe": {
+        "tool": "this",
+        "numResult": 1,
+        "components": {
+          "planks_oak": 5
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": ""
+    },
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 7,
+      "maxNum": 99,
+      "nameKod": "planks_oak",
+      "nameEN": "Planks Oak",
+      "nameRU": "Дубовые Доски",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "planks_oak",
+      "block": {
+        "id": 7,
+        "nameKod": "planks_oak",
+        "item": "planks_oak",
+        "numItem": 1,
+        "density": 0.5,
+        "type": "SOLID",
+        "property": {
+          "map": {}
+        },
+        "materials": "tree"
+      },
+      "recipe": {
+        "tool": "this",
+        "numResult": 2,
+        "components": {
+          "tree_oak": 1
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": ""
+    },
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 8,
+      "maxNum": 99,
+      "nameKod": "plant_grass",
+      "nameEN": "Big Grass",
+      "nameRU": "Высокая Трава",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "plant_grass",
+      "block": {
+        "extends": "#PLANT_GRASS",
+        "id": 8,
+        "nameKod": "plant_grass",
+        "item": "seed_plant_grass",
+        "numItem": 1,
+        "density": 0.1,
+        "type": "PASSABLE",
+        "property": {
+          "map": {}
+        },
+        "materials": "plant"
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": ""
+    },
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 9,
+      "maxNum": 99,
+      "nameKod": "seed_plant_grass",
+      "nameEN": "Seed Big Grass",
+      "nameRU": "Семя Высокой Травы",
+      "infaRU": "",
+      "infaEN": "",
+      "blockBet": "plant_grass",
+      "texture": "seed_plant_grass",
+      "property": {
+        "map": {}
+      },
+      "materials": ""
+    },
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 10,
+      "maxNum": 99,
+      "nameKod": "torch",
+      "nameEN": "Torch",
+      "nameRU": "Факел",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "torch1",
+      "block": {
+        "id": 10,
+        "nameKod": "torch",
+        "item": "torch",
+        "numItem": 1,
+        "density": 0.5,
+        "type": "PASSABLE",
+        "property": {
+          "map": {}
+        },
+        "anim": {
+          "pause": 100,
+          "frames": "torch1:torch2:torch3:torch4:torch5"
+        },
+        "materials": "torch"
+      },
+      "recipe": {
+        "tool": "this",
+        "numResult": 1,
+        "components": {
+          "planks_oak": 2,
+          "charcoal": 1
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": ""
+    },
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 11,
+      "maxNum": 99,
+      "nameKod": "iron_ore",
+      "nameEN": "Iron Ore",
+      "nameRU": "Железная руда",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "iron_ore",
+      "block": {
+        "id": 11,
+        "nameKod": "iron_ore",
+        "item": "iron_ore",
+        "numItem": 1,
+        "density": 0.5,
+        "type": "SOLID",
+        "property": {
+          "map": {}
+        },
+        "materials": "ore_1"
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": ""
+    },
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 12,
+      "maxNum": 99,
+      "nameKod": "iron_ingot",
+      "nameEN": "Iron Ingot",
+      "nameRU": "Железный слиток",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "iron_ingot",
+      "recipe": {
+        "tool": "stone_furnace",
+        "numResult": 1,
+        "components": {
+          "iron_ore": 1
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": ""
+    },
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 13,
+      "maxNum": 99,
+      "nameKod": "stone_furnace",
+      "nameEN": "Stone Furnace",
+      "nameRU": "Каменная печь",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "stone_furnace_off",
+      "block": {
+        "extends": "#FURNACE",
+        "id": 13,
+        "nameKod": "stone_furnace",
+        "item": "stone_furnace",
+        "numItem": 1,
+        "density": 0.5,
+        "type": "SOLID",
+        "property": {
+          "map": {
+            "timeMelt": "2000",
+            "nameTexture": "stone_furnace"
+          }
+        },
+        "materials": "stone"
+      },
+      "recipe": {
+        "tool": "crafting_table",
+        "numResult": 1,
+        "components": {
+          "stone": 10
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": ""
+    },
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 14,
+      "maxNum": 16,
+      "nameKod": "wood_chest",
+      "nameEN": "Wood chest",
+      "nameRU": "Деревянный сундук",
+      "infaRU": "Клади вещи!",
+      "infaEN": "",
+      "texture": "wood_chest",
+      "block": {
+        "extends": "#CHEST",
+        "id": 14,
+        "nameKod": "crafting_table",
+        "item": "crafting_table",
+        "numItem": 1,
+        "density": 0.1,
+        "type": "SOLID",
+        "property": {
+          "map": {
+            "numRow": "3"
+          }
+        },
+        "materials": "tree"
+      },
+      "recipe": {
+        "tool": "crafting_table",
+        "numResult": 1,
+        "components": {
+          "tree_oak": 5,
+          "planks_oak": 1
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": ""
+    },
+    {
+      "type": "ITEM_DEFAULT",
+      "id": 15,
+      "maxNum": 99,
+      "nameKod": "charcoal",
+      "nameEN": "Charcoal",
+      "nameRU": "Древестный уголь",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "charcoal",
+      "recipe": {
+        "tool": "stone_furnace",
+        "numResult": 1,
+        "components": {
+          "tree_oak": 1
+        }
+      },
+      "property": {
+        "map": {
+          "numMelt": "1"
+        }
+      },
+      "materials": "fuel"
+    },
+    {
+      "type": "TOOL",
+      "id": 100,
+      "maxNum": 1,
+      "nameKod": "wood_pixkaxe",
+      "nameEN": "Wood Pixkaxe",
+      "nameRU": "Деревянная кирка",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "wood_pixkaxe",
+      "recipe": {
+        "tool": "crafting_table",
+        "numResult": 1,
+        "components": {
+          "planks_oak": 10
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": "",
+      "force": 0.5,
+      "strengthMax": 16,
+      "crashType": "stone"
+    },
+    {
+      "type": "TOOL",
+      "id": 101,
+      "maxNum": 1,
+      "nameKod": "wood_axe",
+      "nameEN": "Wood Axe",
+      "nameRU": "Деревянный Топор",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "wood_axe",
+      "recipe": {
+        "tool": "crafting_table",
+        "numResult": 1,
+        "components": {
+          "planks_oak": 5
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": "",
+      "force": 0.5,
+      "strengthMax": 15,
+      "crashType": "tree"
+    },
+    {
+      "type": "TOOL",
+      "id": 102,
+      "maxNum": 1,
+      "nameKod": "wood_shovel",
+      "nameEN": "Wood Shovel",
+      "nameRU": "Деревянная Лопата",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "wood_shovel",
+      "recipe": {
+        "tool": "crafting_table",
+        "numResult": 1,
+        "components": {
+          "planks_oak": 5
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": "",
+      "force": 0.5,
+      "strengthMax": 16,
+      "crashType": "dirst:grass"
+    },
+    {
+      "type": "TOOL",
+      "id": 103,
+      "maxNum": 1,
+      "nameKod": "stone_pixkaxe",
+      "nameEN": "Stone Pixkaxe",
+      "nameRU": "Каменная кирка",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "stone_pixkaxe",
+      "recipe": {
+        "tool": "crafting_table",
+        "numResult": 1,
+        "components": {
+          "planks_oak": 5,
+          "stone": 5
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": "",
+      "force": 0.75,
+      "strengthMax": 30,
+      "crashType": "stone:ore_1"
+    },
+    {
+      "type": "TOOL",
+      "id": 104,
+      "maxNum": 1,
+      "nameKod": "stone_axe",
+      "nameEN": "Stone Axe",
+      "nameRU": "Каменный Топор",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "stone_axe",
+      "recipe": {
+        "tool": "crafting_table",
+        "numResult": 1,
+        "components": {
+          "planks_oak": 5,
+          "stone": 5
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": "",
+      "force": 0.75,
+      "strengthMax": 30,
+      "crashType": "tree"
+    },
+    {
+      "type": "TOOL",
+      "id": 105,
+      "maxNum": 1,
+      "nameKod": "stone_shovel",
+      "nameEN": "Stone Shovel",
+      "nameRU": "Каменная Лопата",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "stone_shovel",
+      "recipe": {
+        "tool": "crafting_table",
+        "numResult": 1,
+        "components": {
+          "planks_oak": 5,
+          "stone": 2
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": "",
+      "force": 0.75,
+      "strengthMax": 30,
+      "crashType": "dirst:grass"
+    },
+    {
+      "type": "TOOL",
+      "id": 106,
+      "maxNum": 1,
+      "nameKod": "iron_pixkaxe",
+      "nameEN": "Iron Pixkaxe",
+      "nameRU": "Железная кирка",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "iron_pixkaxe",
+      "recipe": {
+        "tool": "crafting_table",
+        "numResult": 1,
+        "components": {
+          "planks_oak": 5,
+          "iron_ingot": 5
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": "",
+      "force": 0.9,
+      "strengthMax": 50,
+      "crashType": "stone:ore_1"
+    },
+    {
+      "type": "TOOL",
+      "id": 107,
+      "maxNum": 1,
+      "nameKod": "iron_axe",
+      "nameEN": "Iron Axe",
+      "nameRU": "Железная Топор",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "iron_axe",
+      "recipe": {
+        "tool": "crafting_table",
+        "numResult": 1,
+        "components": {
+          "planks_oak": 5,
+          "iron_ingot": 5
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": "",
+      "force": 0.9,
+      "strengthMax": 50,
+      "crashType": "tree"
+    },
+    {
+      "type": "TOOL",
+      "id": 108,
+      "maxNum": 1,
+      "nameKod": "iron_shovel",
+      "nameEN": "Iron Shovel",
+      "nameRU": "Железная Лопата",
+      "infaRU": "",
+      "infaEN": "",
+      "texture": "iron_shovel",
+      "recipe": {
+        "tool": "crafting_table",
+        "numResult": 1,
+        "components": {
+          "planks_oak": 5,
+          "iron_ingot": 2
+        }
+      },
+      "property": {
+        "map": {}
+      },
+      "materials": "",
+      "force": 0.9,
+      "strengthMax": 50,
+      "crashType": "dirst:grass"
+    }
+  ]
+}
